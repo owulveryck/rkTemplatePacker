@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1404 1872" style="enable-background:new 0 0 1404 1872;" xml:space="preserve">
+    <defs>
+        <marker id="arrow" refX="15" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
+            <path d="M0,-5L10,0L0,5" fill="rgb(255,0,0)"></path>
+        </marker>
+        <marker id="graphArrow" refX="9" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
+            <path d="M0,-5L10,0L0,5" fill="rgb(0,0,0)"></path>
+        </marker>
+    </defs>
+
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<title>templates_artboards_horisontal_turnt</title>
+<g id="White_BG">
+	<rect y="-1" class="st0" width="1404" height="1872"/>
+</g>
+	<g transform="translate(702,0) rotate(90)">
+    <g transform=" translate(30,1354) rotate(270)">
+        <line x1="0" y1="0" x2="1304" y2="0" stroke-width="1" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="315" x2="1304" y2="315" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="724" x2="1304" y2="724" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <line x1="0" y1="1268" x2="1304" y2="1268" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="start">
+            <tspan x="5" dy="-10">Invisible</tspan>
+        </text>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
+            <tspan x="1299" dy="-10">Visible</tspan>
+        </text>
+        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="middle">
+            <tspan x="652" dy="-10">Value Chain</tspan>
+        </text>
+    </g>
+    <line x1="30" y1="1354" x2="1842" y2="1354" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" font-size="11px" text-anchor="start">
+        <tspan x="37" dy="65">Uncharted</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" font-size="11px" text-anchor="end">
+        <tspan x="1837" dy="65">Industrialised</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="30" dy="1369">🧪 Genesis</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="345" dy="1369">⚒️  Custom-Built</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="754" dy="1369">🛒 Product
+(+rental)</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
+        <tspan x="1298" dy="1369">⛽ Commodity
+(+utility)</tspan>
+    </text>
+    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
+        <tspan x="1842" dy="1369">Evolution</tspan>
+    </text>
+</g>
+</svg>
