@@ -19,7 +19,7 @@
 <g id="White_BG">
 	<rect y="-1" class="st0" width="1404" height="1872"/>
 </g>
-	<g transform="translate(702,0) rotate(90)">
+	<g transform="translate(1404,0) rotate(90)">
     <g transform=" translate(30,1354) rotate(270)">
         <line x1="0" y1="0" x2="1304" y2="0" stroke-width="1" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
         <line x1="0" y1="315" x2="1304" y2="315" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
