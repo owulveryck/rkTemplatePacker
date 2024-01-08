@@ -27,10 +27,8 @@
 
 
 <!-- Textbox with Lorem Ipsum -->
-<text x="50" y="80" font-family="Verdana" font-size="30" fill="grey">
-<tspan x="50" dy="1.2em">Cette section établit les bases du mémo,</tspan>
-<tspan x="50" dy="1.2em">en décrivant ce qu'il va couvrir et en définissant la direction du document.</tspan>
-</text>
+<text x="20" y="90" font-family="Verdana" font-size="30" fill="grey">Cette section établit les bases du mémo,</text>
+<text x="20" y="120" font-family="Verdana" font-size="30" fill="grey">en décrivant ce qu'il va couvrir et en définissant la direction du document.</text>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,206.5)"/>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,258.5)"/>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,310.5)"/>

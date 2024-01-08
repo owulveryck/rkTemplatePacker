@@ -27,10 +27,14 @@
 
 
 <!-- Textbox with Lorem Ipsum -->
-<text x="50" y="80" font-family="Verdana" font-size="30" fill="grey">
-<tspan x="50" dy="1.2em">Une analyse complète de l'état actuel de l'entreprise est fournie ici,</tspan>
-<tspan x="50" dy="1.2em">en se référant à la section des objectifs.</tspan>
-<tspan x="50" dy="1.2em">Elle évite le jargon ou une analyse technique extensive pour rester accessible.</tspan>
+<text x="20" y="90" font-family="Verdana" font-size="30" fill="grey">
+Une analyse complète de l'état actuel de l'entreprise est fournie ici,
+</text>
+<text x="20" y="120" font-family="Verdana" font-size="30" fill="grey">
+en se référant à la section des objectifs.
+</text>
+<text x="20" y="150" font-family="Verdana" font-size="30" fill="grey">
+Elle évite le jargon ou une analyse technique extensive pour rester accessible.
 </text>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,206.5)"/>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,258.5)"/>

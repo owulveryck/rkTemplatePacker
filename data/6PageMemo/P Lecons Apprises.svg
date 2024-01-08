@@ -27,9 +27,11 @@
 
 
 <!-- Textbox with Lorem Ipsum -->
-<text x="50" y="80" font-family="Verdana" font-size="30" fill="grey">
-<tspan x="50" dy="1.2em">Cette partie se concentre sur les activités passées,</tspan>
-<tspan x="50" dy="1.2em">sans tirer de projections, de conclusions ou d'interprétations.</tspan>
+<text x="20" y="90" font-family="Verdana" font-size="30" fill="grey">
+Cette partie se concentre sur les activités passées,
+</text>
+<text x="20" y="120" font-family="Verdana" font-size="30" fill="grey">
+sans tirer de projections, de conclusions ou d'interprétations.
 </text>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,206.5)"/>
 <path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 0 L 1402 0 " transform="matrix(1,0,0,-1,1,258.5)"/>
