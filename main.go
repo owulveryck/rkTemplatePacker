@@ -1,22 +1,118 @@
 package main
 
 import (
+	"bytes"
 	"embed"
 	"encoding/json"
+	"fmt"
 	"io"
 	"io/fs"
+	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/kelseyhightower/envconfig"
+)
+
+type Config struct {
+	TemplateGlobalDir      string `envconfig:"TEMPLATE_GLOBAL_DIR" default:"/usr/share/remarkable/templates"`
+	TemplateJSONFile       string `envconfig:"TEMPLATE_JSON_FILE" default:"/usr/share/remarkable/templates/templates.json"`
+	TemplateJSONBackupFile string `envconfig:"TEMPLATE_JSON_BACKUP_FILE" default:"/home/root/templates_backup.json"`
+}
+
+var (
+	DefaultIconPortrait  = "\ue9fe"
+	DefaultIconLandscape = "\ue9fd"
 )
 
 //go:embed data/*
 var data embed.FS
+var cfg Config
 
 func main() {
-	var templates TemplateJSON
+	err := envconfig.Process("", &cfg)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
 
+	originalContent, err := os.ReadFile(cfg.TemplateJSONFile)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var template TemplateJSON
+	err = UnmarshalStrict(originalContent, &template)
+	if err != nil {
+		fmt.Println("Error decoding JSON:", err)
+		return
+	}
+
+	templates, err := generateTemplatesFromEmbededFiles()
+
+	if err != nil {
+		log.Fatalf("Error walking through embedded files: %v", err)
+	}
+
+	// Add the template to the original if it does not exists
+	for _, customTemplate := range templates {
+		exists := false
+		for _, originalTemplate := range template.Templates {
+			if customTemplate.Name == originalTemplate.Name {
+				exists = true
+			}
+		}
+		if !exists {
+			template.Templates = append(template.Templates, customTemplate)
+		}
+	}
+
+	err = copyEmbededFiles(cfg.TemplateGlobalDir)
+	if err != nil {
+		log.Fatalf("Error copying embedded files: %v", err)
+	}
+
+	log.Println("Files copied successfully to", cfg.TemplateGlobalDir)
+
+	err = writeJSONTemplate(template)
+	if err != nil {
+		log.Fatalf("Error copying embedded files: %v", err)
+	}
+	fmt.Printf("you can compare with: \ndiff <(jq --sort-keys . %v) <(jq --sort-keys . %v)\n", cfg.TemplateJSONBackupFile, cfg.TemplateJSONFile)
+
+}
+
+func writeJSONTemplate(tmpl TemplateJSON) error {
+	// Create a backup of the existing file if it exists
+	if _, err := os.Stat(cfg.TemplateJSONFile); err == nil {
+		err := copyFile(cfg.TemplateJSONFile, cfg.TemplateJSONBackupFile)
+		if err != nil {
+			return err
+		}
+	}
+
+	// Encode data to JSON
+	var jsonData bytes.Buffer
+
+	enc := json.NewEncoder(&jsonData)
+	enc.SetEscapeHTML(false)
+	enc.SetIndent("", "   ")
+	err := enc.Encode(tmpl)
+	if err != nil {
+		return err
+	}
+
+	// Write JSON data to file
+	err = ioutil.WriteFile(cfg.TemplateJSONFile, jsonData.Bytes(), 0644)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func generateTemplatesFromEmbededFiles() ([]Template, error) {
+	var templates = make([]Template, 0)
 	// Walk through the directory
 	err := fs.WalkDir(data, "data", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
@@ -41,13 +137,7 @@ func main() {
 			iconcode = DefaultIconLandscape
 		}
 
-		templates.Templates = append(templates.Templates, struct {
-			Name       string   `json:"name"`
-			Filename   string   `json:"filename"`
-			IconCode   string   `json:"iconCode"`
-			Categories []string `json:"categories"`
-			Landscape  bool     `json:"landscape,omitempty"`
-		}{
+		templates = append(templates, Template{
 			Name:       name,
 			IconCode:   iconcode,
 			Filename:   path,
@@ -57,30 +147,11 @@ func main() {
 
 		return nil
 	})
-
-	if err != nil {
-		log.Fatalf("Error walking through embedded files: %v", err)
-	}
-
-	// Print the JSON for demonstration purposes
-	jsonData, err := json.MarshalIndent(templates, "", "  ")
-	if err != nil {
-		log.Fatalf("Error marshaling data to JSON: %v", err)
-	}
-	log.Println(string(jsonData))
-	targetDir := "/tmp/output" // Define your target directory here
-
-	err = copyEmbeddedFiles(targetDir)
-	if err != nil {
-		log.Fatalf("Error copying embedded files: %v", err)
-	}
-
-	log.Println("Files copied successfully to", targetDir)
-
+	return templates, err
 }
 
-// copyEmbeddedFiles copies files from embedded file system to a target directory on disk.
-func copyEmbeddedFiles(targetDir string) error {
+// copyEmbededFiles copies files from embedded file system to a target directory on disk.
+func copyEmbededFiles(targetDir string) error {
 
 	return fs.WalkDir(data, ".", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
@@ -119,4 +190,44 @@ func copyEmbeddedFiles(targetDir string) error {
 		_, err = io.Copy(targetFile, srcFile)
 		return err
 	})
+}
+
+// UnmarshalStrict enforces strict unmarshaling
+func UnmarshalStrict(data []byte, v interface{}) error {
+	dec := json.NewDecoder(ioutil.NopCloser(bytes.NewBuffer(data)))
+	dec.DisallowUnknownFields()
+
+	if err := dec.Decode(v); err != nil {
+		return err
+	}
+
+	// Check for extraneous data
+	if dec.More() {
+		return fmt.Errorf("extra data in JSON")
+	}
+
+	return nil
+}
+
+// copyFile copies the contents of the file named src to the file named dst.
+// The file will be created if it does not already exist. If the destination file exists,
+// all it's contents will be replaced by the contents of the source file.
+func copyFile(src, dst string) error {
+	// Open the source file for reading
+	sourceFile, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer sourceFile.Close()
+
+	// Create the destination file for writing
+	destFile, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer destFile.Close()
+
+	// Copy the contents of the source file to the destination file
+	_, err = io.Copy(destFile, sourceFile)
+	return err
 }
