@@ -1,63 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1404 1872" style="enable-background:new 0 0 1404 1872;" xml:space="preserve">
-    <defs>
-        <marker id="arrow" refX="15" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
-            <path d="M0,-5L10,0L0,5" fill="rgb(255,0,0)"></path>
-        </marker>
-        <marker id="graphArrow" refX="9" refY="0" markerWidth="12" markerHeight="12" viewBox="0 -5 10 10">
-            <path d="M0,-5L10,0L0,5" fill="rgb(0,0,0)"></path>
-        </marker>
-    </defs>
-
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-</style>
-<title>templates_artboards_horisontal_turnt</title>
-<g id="White_BG">
-	<rect y="-1" class="st0" width="1404" height="1872"/>
-</g>
-	<g transform="translate(1404,0) rotate(90)">
-    <g transform=" translate(30,1354) rotate(270)">
-        <line x1="0" y1="0" x2="1304" y2="0" stroke-width="1" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
-        <line x1="0" y1="315" x2="1304" y2="315" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
-        <line x1="0" y1="724" x2="1304" y2="724" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
-        <line x1="0" y1="1268" x2="1304" y2="1268" stroke-width="1" stroke-dasharray="2 2" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
-        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="start">
-            <tspan x="5" dy="-10">Invisible</tspan>
-        </text>
-        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
-            <tspan x="1299" dy="-10">Visible</tspan>
-        </text>
-        <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="middle">
-            <tspan x="652" dy="-10">Value Chain</tspan>
-        </text>
-    </g>
-    <line x1="30" y1="1354" x2="1842" y2="1354" marker-end="url(#graphArrow)" stroke="rgb(19,36,84)" stroke-opacity="1.0"></line>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" font-size="11px" text-anchor="start">
-        <tspan x="37" dy="65">Uncharted</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" font-size="11px" text-anchor="end">
-        <tspan x="1837" dy="65">Industrialised</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
-        <tspan x="30" dy="1369">🧪 Genesis</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
-        <tspan x="345" dy="1369">⚒️  Custom-Built</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
-        <tspan x="754" dy="1369">🛒 Product
-(+rental)</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif">
-        <tspan x="1298" dy="1369">⛽ Commodity
-(+utility)</tspan>
-    </text>
-    <text fill="rgb(19,36,84)" fill-opacity="1.0" font-weight="bold" font-family="Century Gothic,CenturyGothic,AppleGothic,sans-serif" text-anchor="end">
-        <tspan x="1842" dy="1369">Evolution</tspan>
-    </text>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1404 1872"
+   version="1.2"
+   id="svg6"
+   sodipodi:docname="LS Wardley Maps2.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs10">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="11.323636"
+       markerHeight="13.090909"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.5042735"
+     inkscape:cx="528.48305"
+     inkscape:cy="1133.3136"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">
+Wardley</title>
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="m 518.56785,165.58466 432.30508,-3.9661"
+     id="path4992" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;marker-end:url(#TriangleStart)"
+     d="M 1353.1844,1836.0396 56.269094,1835.8093"
+     id="path6290"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;marker-start:url(#TriangleStart)"
+     d="m 1353.843,29.63066 -0.4107,1806.67454"
+     id="path6522"
+     sodipodi:nodetypes="cc" />
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-1343.0618"
+     y="-1845.3015"
+     id="text6690"
+     transform="scale(-1)"><tspan
+       sodipodi:role="line"
+       id="tspan6688"
+       x="-1343.0618"
+       y="-1845.3015">Invisible</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-1800.7356"
+     y="1376.7069"
+     id="text6690-8"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-3"
+       x="-1800.7356"
+       y="1376.7069"> genesis / concept</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-1261.0375"
+     y="1379.3889"
+     id="text6690-8-4"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-3-1"
+       x="-1261.0375"
+       y="1379.3889">custom / emerging</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-715.72485"
+     y="1381.1989"
+     id="text6690-8-4-0"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-3-1-7"
+       x="-715.72485"
+       y="1381.1989">product / converging</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-329.79947"
+     y="1378.089"
+     id="text6690-8-4-0-2"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-3-1-7-2"
+       x="-329.79947"
+       y="1378.089">commodity / accepted</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-94.74128"
+     y="1378.4554"
+     id="text6690-8-4-0-2-0"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-3-1-7-2-1"
+       x="-94.74128"
+       y="1378.4554">Evolution</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-761.05981"
+     y="-1842.8517"
+     id="text6690-4"
+     transform="scale(-1)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-8"
+       x="-761.05981"
+       y="-1842.8517">Value Chain</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18.6667px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     x="-125.42528"
+     y="-1844.309"
+     id="text6690-4-4"
+     transform="scale(-1)"><tspan
+       sodipodi:role="line"
+       id="tspan6688-8-3"
+       x="-125.42528"
+       y="-1844.309">Visible</tspan></text>
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 48.72752,344.24706 1303.02108,0.7011"
+     id="path7027" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 49.60405,752.64623 1303.02105,0.7011"
+     id="path7027-9" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-dasharray:1, 2;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 48.902915,1297.4122 1351.924,1298.1133"
+     id="path7027-9-4" />
+  <metadata
+     id="metadata7488">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>
+Wardley</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
